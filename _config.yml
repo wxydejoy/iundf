@@ -101,4 +101,10 @@ theme: webstack
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+- type: git
+  #repo: root@139.224.61.147:/var/repo/hexo_static  
+  repo:
+    url: https://github.com/wxydejoy/iundf.git
+    branch: index
+    token: $GITHUB_TOKEN
+    
